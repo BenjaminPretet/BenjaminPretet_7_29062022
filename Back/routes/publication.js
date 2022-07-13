@@ -13,6 +13,6 @@ router.delete('/:id', auth, publicationCtrl.deleteSauce);
 router.get('/:id', auth, publicationCtrl.getOneSauce);
 router.get('/', auth, publicationCtrl.getAllSauces);
 
-router.post('/:id/like', auth, likesCtrl.addLikeOrDislike);
+router.post('/:id/like', auth, likesCtrl.addLike);
 
 module.exports = router;
